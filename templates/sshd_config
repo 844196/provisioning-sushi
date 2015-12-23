@@ -1,0 +1,7 @@
+port                             8492
+AuthorizedKeysFile               .ssh/authorized_keys
+PubkeyAuthentication             yes
+PermitRootLogin                  no
+PasswordAuthentication           no
+ChallengeResponseAuthentication  no
+UsePAM                           yes
