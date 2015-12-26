@@ -5,5 +5,5 @@
 -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 -A INPUT -p icmp -j ACCEPT
 -A INPUT -i lo -j ACCEPT
--A INPUT -m state --state NEW -m tcp -p tcp --dport 8492 -j ACCEPT
+-A INPUT -m state --state NEW -m tcp -p tcp --dport <%= node['ssh']['port'] %> -j ACCEPT
 COMMIT

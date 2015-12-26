@@ -1,4 +1,4 @@
-port                             8492
+port                             <%= node['ssh']['port'] %>
 AuthorizedKeysFile               .ssh/authorized_keys
 PubkeyAuthentication             yes
 PermitRootLogin                  no
